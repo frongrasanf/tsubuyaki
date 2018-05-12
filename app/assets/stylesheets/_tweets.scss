@@ -2,5 +2,16 @@
   color: white;
   background-color: #4AB3F4;
   border-radius: 25px;
+}
 
+.tweet__main__container {
+  padding: 10px;
+}
+
+.tweet__card__header {
+  background-color: #E8F5FD;
+}
+
+.tweet__text__field::-webkit-input-placeholder {
+  color: #1DA1F2;
 }
