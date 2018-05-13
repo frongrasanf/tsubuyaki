@@ -61,7 +61,12 @@
             </div>
           </div>
         </div>
-<!--         <h2>ツイート</h2> -->
+
+        <% @tweets.each do |tweet| %>
+          <div class="card-body border-bottom" %>
+            <%= tweet.text %>
+          </div>
+        <% end %>
       </div>
     </div>
     <div class="col-md-3">
