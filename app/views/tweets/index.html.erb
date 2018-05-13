@@ -54,10 +54,10 @@
               </div>
             </div>
             <div class="col-md-11">
-              <form class="my-2 my-lg-0">
-                <input type="search" class="form-control form-control-lg mr-sm-2 tweet__text__field" placeholder="いまどうしてる？" aria-label="検索...">
-                <button type="submit" class="btn tweet__btn mt-2 pull-right">ツイート</button>
-              </form>
+              <%= form_for(@tweet) do |f| %>
+                <%= f.text_field :text, :class => "form-control form-control-lg mr-sm-2 tweet__text__field", :placeholder => "いまどうしてる？" %>
+                <%= f.submit "ツイート", :class => "btn tweet__btn mt-2 pull-right" %>
+              <% end %>
             </div>
           </div>
         </div>
